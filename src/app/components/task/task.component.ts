@@ -5,22 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './task.component.html',
   styleUrls: ['./task.component.css']
 })
-export class TaskComponent implements OnInit {
+export class TaskComponent {
 
-  isHidden: boolean;
-  constructor() {
-    this.isHidden = false
-  }
+  isHidden: boolean = false;
+  constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  onHidden() {
-    this.isHidden = false
-  }
-
-  offHidden() {
-    this.isHidden = true
+  onHidden(pBolean: boolean) {
+    this.isHidden = pBolean
   }
 
 }

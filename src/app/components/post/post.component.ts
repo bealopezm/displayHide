@@ -7,10 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  @Input() hidden: boolean;
-  constructor() {
-    this.hidden = false;
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
